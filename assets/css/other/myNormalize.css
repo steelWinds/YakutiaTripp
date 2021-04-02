@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+ 
+html {
+    font-family: "Lato", sans-serif;
+}
+
+select:required:invalid {
+    color: gray;
+  }
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: black;
+}
+
+input:not(:placeholder-shown):invalid {
+    background: rgba(255, 0, 0, 0.400);
+    border-color: red;
+    box-shadow: none;
+}
+
+input:not(:placeholder-shown):valid {
+    border-color: rgb(0, 179, 0)
+}
+
+input:focus {
+    background-color: rgba(0, 179, 0, .400);
+    border-color: rgb(0, 179, 0);
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-align: center;
+}
